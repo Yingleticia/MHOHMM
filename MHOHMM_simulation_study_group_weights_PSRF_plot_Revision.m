@@ -15,7 +15,7 @@
 %       cd met; addpath(pwd)    %<-- also add the met directory
 %       savepath                %<-- save for future MATLAB sessions
 clear;clc;close all;
-
+tic
 dataGenerate = 0; % 1: generate new MCMC samples; 0: using saved data
 
 %% Set seed 
@@ -508,3 +508,4 @@ if Ymax~=0
     ylim([0 Ymax])
 end
 fig=fig+1; 
+toc
